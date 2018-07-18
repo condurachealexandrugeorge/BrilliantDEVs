@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <title>BrilliantDevs</title>
     <link href = "https://brilliantdevs.com/wp-content/uploads/2017/06/logo-icon-big-black-150x150.png" rel="icon" type="image/gif">
+    <link href="{{ asset('css/costum.css') }}" rel="stylesheet" />
 
     @yield('style')
 </head>
