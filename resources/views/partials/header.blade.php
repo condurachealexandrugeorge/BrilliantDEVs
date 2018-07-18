@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-9 col-sm-9 col-xs-9">
                 <div class="Logo">
-                    <img src="https://brilliantdevs.com/wp-content/uploads/2017/06/logo-icon-big-black-150x150.png" id="logo">
+                    <a href="/"><img src="https://brilliantdevs.com/wp-content/uploads/2017/06/logo-icon-big-black-150x150.png" id="logo"></a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-3 col-xs-3" id="positionnav">
