@@ -25,7 +25,7 @@ class AppController extends Controller
     }
     public function getClientPage()
     {
-        return redirect()->route('main');
+        return view('client');
     }
     public function postAdminAssignRoles(Request $request)
     {
@@ -44,8 +44,5 @@ class AppController extends Controller
             $user->roles()->attach(Role::where('name', 'Admin')->first());
         }
         return redirect()->back();
-    }
-    public function testAdminAssignRoles(Request $request) {
-        return view('client');
     }
 }
