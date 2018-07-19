@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
  use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+ use Illuminate\Support\Facades\Input;
  use Illuminate\Support\Facades\Session;
 
  class AuthController extends Controller
@@ -19,14 +20,19 @@ use Illuminate\Support\Facades\Auth;
      }
 
      public function postSignUp (Request $request) {
-         $user = new User();
-         $user->name = $request['name'];
-         $user->email = $request['email'];
-         $user->password = bcrypt($request['password']);
-         $user->save();
-         $user->roles()->attach(Role::where('name','Client')->first());
-         Auth::login($user);
-         return redirect()->route('main');
+
+         if (User::where('email', '=', Input::get('email'))->count() > 0) {
+             echo "esti bou";
+         }else {
+             $user = new User();
+             $user->name = $request['name'];
+             $user->email = $request['email'];
+             $user->password = bcrypt($request['password']);
+             $user->save();
+             $user->roles()->attach(Role::where('name', 'Client')->first());
+             Auth::login($user);
+             return redirect()->route('main');
+         }
      }
 
     public function postSignIn(Request $request)
