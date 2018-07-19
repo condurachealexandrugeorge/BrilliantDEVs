@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Auth;
          $user = new User();
          $user->name = $request['name'];
          $user->email = $request['email'];
-         $user->password = $request['password'];
+         $user->password = bcrypt($request['password']);
          $user->save();
          $user->roles()->attach(Role::where('name','Client')->first());
          Auth::login($user);
