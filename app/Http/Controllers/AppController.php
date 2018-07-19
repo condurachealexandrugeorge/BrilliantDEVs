@@ -17,11 +17,11 @@ class AppController extends Controller
     }
     public function getManagerPage()
     {
-        return redirect()->route('main');
+        return view('manager');
     }
     public function getDeveloperPage()
     {
-        return redirect()->route('main');
+        return view('developer');
     }
     public function getClientPage()
     {
