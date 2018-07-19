@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
  use Illuminate\Support\Facades\Input;
  use Illuminate\Support\Facades\Session;
+ use Illuminate\Support\Facades\Validator;
 
  class AuthController extends Controller
  {
@@ -20,10 +21,10 @@ use Illuminate\Support\Facades\Auth;
      }
 
      public function postSignUp (Request $request) {
-
-         if (User::where('email', '=', Input::get('email'))->count() > 0) {
-             echo "esti bou";
-         }else {
+         $request->validate([
+             'name' => 'required',
+             'email' => 'required|unique:users',
+         ]);
              $user = new User();
              $user->name = $request['name'];
              $user->email = $request['email'];
@@ -32,7 +33,6 @@ use Illuminate\Support\Facades\Auth;
              $user->roles()->attach(Role::where('name', 'Client')->first());
              Auth::login($user);
              return redirect()->route('main');
-         }
      }
 
     public function postSignIn(Request $request)
