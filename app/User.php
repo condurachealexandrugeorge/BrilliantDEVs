@@ -8,9 +8,10 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
   public function roles() {
-
     return $this->belongsToMany('App\Role','user_role','user_id','role_id');
-
+  }
+  public function projects() {
+      return $this->belongsToMany('App\Project','user_project','user_id','project_id');
   }
 
   public function hasAnyRole($roles) {
