@@ -45,6 +45,6 @@ use Illuminate\Support\Facades\Auth;
 
      public function getLogout() {
          Auth::logout();
-         return redirect()->route('main');
+         return redirect('/');
      }
  }

@@ -1,60 +1,37 @@
-
-<ul class="nav justify-content-end">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8 col-sm-8 col-xs-8" style="heigth=50px;">
-                <div class="Logo">
-                    <a href="/"><img src="https://brilliantdevs.com/wp-content/uploads/2017/06/logo-icon-big-black-150x150.png" id="logo"></a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4" id="positionnav">
-                @if(Auth::check()) @if(Auth::user()->hasRole('Admin'))
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" href="/">
+            <strong class="dark-text">BrilliantDEVs</strong>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
                 <li class="nav-item">
-                    <a class="nav-link active" href="/admin">Admin</a>
+                    @if(Auth::check()) @if(Auth::user()->hasRole('Admin'))
+                        <a id="navbar-static-login" class="btn btn-info btn-rounded btn-sm waves-effect waves-light"
+                           data-target="#navbarLogin" href="{{ url('/logout') }}" style="background-color: #fc685f!important;">Sign Out
+                            <i class="fa fa-sign-in ml-2"></i>
+                        </a>
+                    @endif
+                    @endif
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="/manager">Manager</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="/developer">Developer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="/client">Client</a>
-                </li>
-                @elseif(Auth::user()->hasRole('Manager'))
-                <li class="nav-item">
-                    <a class="nav-link active" href="/manager">Manager</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="/developer">Developer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="/client">Client</a>
-                </li>
-                @elseif(Auth::user()->hasRole('Developer'))
-                <li class="nav-item">
-                    <a class="nav-link active" href="/developer">Developer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="/client">Client</a>
-                </li>
-                @elseif(Auth::user()->hasRole('Client'))
-                <li class="nav-item">
-                    <a class="nav-link active" href="/client">Client</a>
-                </li>
-                @endif
-                <li class="nav-item">
-                    <a class="nav-link active" href="/logout">LogOut</a>
-                </li>
-                @else
-                <li class="nav-item">
-                    <a class="nav-link active" href="/signup">Register</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/signin">Login</a>
-                </li>
-                @endif
-            </div>
+            </ul>
         </div>
     </div>
-</ul>
+</nav>
