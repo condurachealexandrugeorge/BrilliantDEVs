@@ -3,26 +3,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <title>BrilliantDevs</title>
-    <link href = "https://brilliantdevs.com/wp-content/uploads/2017/06/logo-icon-big-black-150x150.png" rel="icon" type="image/gif">
-    <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
     @yield('style')
 </head>
 <body>
-@include('partials.header')
-
 
 @yield('content')
 
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+<!-- Bootstrap tooltips -->
+<script src="{{ asset('js/popper.min.js') }}"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/bootstrap.js') }}"></script>
+<!-- MDB core JavaScript -->
+<script src="{{ asset('js/mdb.min.js') }}"></script>
+<!-- MDBootstrap Datatables  -->
+<script src="{{ asset('js/addons/datatables.min.js') }}"></script>
+<script src="{{ asset('js/addons/datatables.js') }}"></script>
+<!-- MDBootstrap Models  -->
+<script src="{{ asset('js/modules/chart.js') }}"></script>
+<script src="{{ asset('js/modules/enhanced-modals.js') }}"></script>
+<script src="{{ asset('js/modules/forms-free.js') }}"></script>
+<script src="{{ asset('js/modules/jquery.easing.js') }}"></script>
+<script src="{{ asset('js/modules/scrolling-navbar.js') }}"></script>
+<script src="{{ asset('js/modules/velocity.min.js') }}"></script>
+<script src="{{ asset('js/modules/waves.js') }}"></script>
+<script src="{{ asset('js/modules/wow.js') }}"></script>
 @yield('scripts')
 </body>
 </html>
