@@ -10,9 +10,15 @@
 |
 */
 Route::group(['middleware' => 'web'], function () {
-    Route::get('/', function () {
+    Route::get('/home', function () {
         return view('home');
     })->name('main');
+
+    Route::get('/', [
+        'uses' => 'AuthController@getSignInPage',
+        'as' => 'signin',
+        'middleware' => 'guest'
+    ]);
 
     Route::get('/admin', [
         'uses' => 'AppController@getAdminPage',
