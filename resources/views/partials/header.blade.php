@@ -2,7 +2,7 @@
 <ul class="nav justify-content-end">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 col-sm-8 col-xs-8">
+            <div class="col-md-8 col-sm-8 col-xs-8" style="heigth=50px;">
                 <div class="Logo">
                     <a href="/"><img src="https://brilliantdevs.com/wp-content/uploads/2017/06/logo-icon-big-black-150x150.png" id="logo"></a>
                 </div>

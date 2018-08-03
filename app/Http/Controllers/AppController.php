@@ -15,18 +15,6 @@ class AppController extends Controller
         $users = User::all();
         return view('admin', ['users' => $users]);
     }
-    public function getManagerPage()
-    {
-        return view('manager');
-    }
-    public function getDeveloperPage()
-    {
-        return view('developer');
-    }
-    public function getClientPage()
-    {
-        return view('client');
-    }
     public function postAdminAssignRoles(Request $request)
     {
         $user = User::where('email', $request['email'])->first();

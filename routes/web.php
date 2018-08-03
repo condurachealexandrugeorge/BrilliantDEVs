@@ -26,24 +26,6 @@ Route::group(['middleware' => 'web'], function () {
         'middleware' => 'roles',
         'roles' => ['Admin']
     ]);
-    Route::get('/manager', [
-        'uses' => 'AppController@getManagerPage',
-        'as' => 'manager',
-        'middleware' => 'roles',
-        'roles' => ['Admin', 'Manager']
-    ]);
-    Route::get('/developer', [
-        'uses' => 'AppController@getDeveloperPage',
-        'as' => 'developer',
-        'middleware' => 'roles',
-        'roles' => ['Admin', 'Manager','Developer']
-    ]);
-    Route::get('/client', [
-        'uses' => 'AppController@getClientPage',
-        'as' => 'client',
-        'middleware' => 'roles',
-        'roles' => ['Admin', 'Manager','Developer','Client']
-    ]);
     Route::get('/signup', [
         'uses' => 'AuthController@getSignUpPage',
         'as' => 'signup',
