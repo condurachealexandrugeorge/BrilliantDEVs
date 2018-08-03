@@ -30,6 +30,9 @@
             {{--</tbody>--}}
         {{--</table>--}}
     {{--</div><br><br>--}}
+@endsection
+@section('scripts')
+    <script type="text/javascript">
 
-
+    </script>
 @endsection
