@@ -2,18 +2,23 @@
 
 @section('content')
     <div class="container">
-        <form action="{{ route('signin') }}" method="post">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
-            </div>
-                {{ csrf_field() }}
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+    <!-- Default form login -->
+    <form class="text-center border border-light p-5" action="{{ route('signin') }}" method="post">
+
+        <p class="h4 mb-4">Sign in</p>
+
+        <!-- Email -->
+        <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail" name="email">
+
+        <!-- Password -->
+        <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password" name="password">
+    {{ csrf_field() }}
+        <!-- Sign in button -->
+        <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+
+
+
+    </form>
     </div>
+    <!-- Default form login -->
 @endsection
