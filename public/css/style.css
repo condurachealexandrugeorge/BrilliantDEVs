@@ -26,3 +26,9 @@
 @media (max-width: 1199.98px) {
   .sidebar-fixed {
     display: none; } }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
