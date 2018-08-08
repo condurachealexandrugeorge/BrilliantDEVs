@@ -1,10 +1,10 @@
 @if(Auth::check()) @if(Auth::user()->hasRole('Admin'))
     <!--Call to action-->
     <div class="pt-4">
-        <a class="btn btn-outline-white" href="https://docs.google.com/spreadsheets/d/16Oo4HZW_GlQWPkH38CRgD15jaOXGLirlsCQVV_TmzKo/edit#gid=0" target="_blank" role="button">Download MDB
+        <a class="btn btn-outline-white" href="https://docs.google.com/spreadsheets/d/16Oo4HZW_GlQWPkH38CRgD15jaOXGLirlsCQVV_TmzKo/edit#gid=0" target="_blank" role="button">WORK INFORMATION
             <i class="fa fa-download ml-2"></i>
         </a>
-        <a class="btn btn-outline-white" href="https://docs.google.com/spreadsheets/d/16Oo4HZW_GlQWPkH38CRgD15jaOXGLirlsCQVV_TmzKo/edit#gid=0" target="_blank" role="button">Start free tutorial
+        <a class="btn btn-outline-white" href="https://docs.google.com/spreadsheets/d/1-8XVTFI10XbA_32e5c27koKn20MuMITiLeD4np9zXCI/edit#gid=0" target="_blank" role="button">MANAGEMENT DB
             <i class="fa fa-graduation-cap ml-2"></i>
         </a>
     </div>
@@ -18,40 +18,17 @@
             <i class="fa fa-facebook mr-3"></i>
         </a>
 
-        <a href="https://twitter.com/MDBootstrap" target="_blank">
-            <i class="fa fa-twitter mr-3"></i>
-        </a>
-
         <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
             <i class="fa fa-youtube mr-3"></i>
         </a>
 
-        <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-            <i class="fa fa-google-plus mr-3"></i>
-        </a>
-
-        <a href="https://dribbble.com/mdbootstrap" target="_blank">
-            <i class="fa fa-dribbble mr-3"></i>
-        </a>
-
-        <a href="https://pinterest.com/mdbootstrap" target="_blank">
-            <i class="fa fa-pinterest mr-3"></i>
-        </a>
-
-        <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-            <i class="fa fa-github mr-3"></i>
-        </a>
-
-        <a href="http://codepen.io/mdbootstrap/" target="_blank">
-            <i class="fa fa-codepen mr-3"></i>
-        </a>
     </div>
     <!-- Social icons -->
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
         © 2018 Copyright:
-        <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> BrilliantDEVs </a>
     </div>
     <!--/.Copyright-->
 @endif
