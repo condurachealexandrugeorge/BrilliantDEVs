@@ -1,5 +1,10 @@
 @extends('layouts.master')
-
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</header>
 @section('content')
     <main class="pt-5 mx-lg-5">
         <div class="container-fluid mt-5">
@@ -32,10 +37,8 @@
                         <!--Card content-->
                         <div class="card-body">
                             <div class="list-group list-group-flush">
-                                <a class="list-group-item list-group-item-action waves-effect">Sales
-                                    <span class="badge badge-success badge-pill pull-right">22%
-                                        <i class="fa fa-arrow-up ml-1"></i>
-                                    </span>
+                                <a class="list-group-item list-group-item-action waves-effect">Hosting
+                                    <i class="fa fa-server pull-right" aria-hidden="true" style="font-size: 24px;"></i>
                                 </a>
                                 <a class="list-group-item list-group-item-action waves-effect">Traffic
                                     <span class="badge badge-danger badge-pill pull-right">5%
