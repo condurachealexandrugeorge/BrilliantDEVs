@@ -57,24 +57,22 @@
                         <!--Card content-->
                         <div class="card-body">
                             <div class="list-group list-group-flush">
-                                <a class="list-group-item list-group-item-action waves-effect">Sales
-                                    <span class="badge badge-success badge-pill pull-right">22%
-                                        <i class="fa fa-arrow-up ml-1"></i>
+                                <a class="list-group-item list-group-item-action waves-effect">Facturi scadente
+                                    <span class="badge badge-warning badge-pill pull-right">22
                                     </span>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Traffic
-                                    <span class="badge badge-danger badge-pill pull-right">5%
-                                        <i class="fa fa-arrow-down ml-1"></i>
+                                <a class="list-group-item list-group-item-action waves-effect">Servicii hosting
+                                    <span class="badge badge-primary badge-pill pull-right">5
                                     </span>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Orders
+                                <a class="list-group-item list-group-item-action waves-effect">Servicii mentenanta
                                     <span class="badge badge-primary badge-pill pull-right">14</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Issues
+                                <a class="list-group-item list-group-item-action waves-effect">Useri
                                     <span class="badge badge-primary badge-pill pull-right">123</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Messages
-                                    <span class="badge badge-primary badge-pill pull-right">8</span>
+                                <a class="list-group-item list-group-item-action waves-effect">Istoric facturi
+                                    <i class="fa fa-file pull-right" aria-hidden="true" style="font-size: 24px;"></i>
                                 </a>
                             </div>
                         </div>
