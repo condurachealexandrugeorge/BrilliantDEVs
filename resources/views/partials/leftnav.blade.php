@@ -1,7 +1,7 @@
 @if(Auth::check()) @if(Auth::user()->hasRole('Admin'))
     <div class="sidebar-fixed position-fixed">
         <a class="logo-wrapper waves-effect" style="padding-left: 0px; padding-right: 0px; width: 100%;
-        text-align: center;">
+        text-align: center;" href="{{ url('home') }}">
             <img src="{{ asset('img/logo.png') }}" class="img-fluid" alt="" style="max-height: 70px;">
         </a>
         <div class="list-group list-group-flush">

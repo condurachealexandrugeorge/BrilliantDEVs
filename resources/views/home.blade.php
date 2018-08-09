@@ -90,7 +90,7 @@
                                 <a class="list-group-item list-group-item-action waves-effect">Add User
                                     <i class="fa fa-user-plus pull-right" aria-hidden="true" style="font-size: 24px;"></i>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect">All Users
+                                <a class="list-group-item list-group-item-action waves-effect" href="{{ url('users') }}">All Users
                                     <i class="fa fa-users pull-right" aria-hidden="true" style="font-size: 24px;"></i>
                                 </a>
                             </div>

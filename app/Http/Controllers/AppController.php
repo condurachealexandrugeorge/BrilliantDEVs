@@ -10,10 +10,10 @@ class AppController extends Controller
     {
         return redirect()->route('main');
     }
-    public function getAdminPage()
+    public function getUsersPage()
     {
         $users = User::all();
-        return view('admin', ['users' => $users]);
+        return view('users', ['users' => $users]);
     }
     public function postAdminAssignRoles(Request $request)
     {

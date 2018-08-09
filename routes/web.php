@@ -20,8 +20,8 @@ Route::group(['middleware' => 'web'], function () {
         'middleware' => 'guest'
     ]);
 
-    Route::get('/admin', [
-        'uses' => 'AppController@getAdminPage',
+    Route::get('/users', [
+        'uses' => 'AppController@getUsersPage',
         'as' => 'author',
         'middleware' => 'roles',
         'roles' => ['Admin']
