@@ -18,7 +18,8 @@ class AppController extends Controller
     public function getUsersRules()
     {
         $users = User::all();
-        return view('rules', ['users' => $users]);
+        $increment=1;
+        return view('rules', ['users' => $users, 'increment' => $increment]);
     }
     public function postAdminAssignRoles(Request $request)
     {
