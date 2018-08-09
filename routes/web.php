@@ -22,7 +22,13 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/users', [
         'uses' => 'AppController@getUsersPage',
-        'as' => 'author',
+        'as' => 'users',
+        'middleware' => 'roles',
+        'roles' => ['Admin']
+    ]);
+    Route::get('/rules', [
+        'uses' => 'AppController@getUsersRules',
+        'as' => 'rules',
         'middleware' => 'roles',
         'roles' => ['Admin']
     ]);

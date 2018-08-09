@@ -85,7 +85,7 @@
                                 <a class="list-group-item list-group-item-action waves-effect" href="{{ url('signup') }}">Add User
                                     <i class="fa fa-user-plus pull-right" aria-hidden="true" style="font-size: 24px;"></i>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect" href="{{ url('users') }}">Change role
+                                <a class="list-group-item list-group-item-action waves-effect" href="{{ url('rules') }}">Change role
                                     <i class="fa fa-pencil-square-o pull-right" aria-hidden="true" style="font-size: 28px;" ></i>
                                 </a>
                                 <a class="list-group-item list-group-item-action waves-effect" href="{{ url('users') }}">All Users

@@ -15,6 +15,11 @@ class AppController extends Controller
         $users = User::all();
         return view('users', ['users' => $users]);
     }
+    public function getUsersRules()
+    {
+        $users = User::all();
+        return view('rules', ['users' => $users]);
+    }
     public function postAdminAssignRoles(Request $request)
     {
         $user = User::where('email', $request['email'])->first();
