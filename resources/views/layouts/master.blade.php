@@ -6,10 +6,10 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <title>BrilliantDevs</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" media="screen"/>
+    <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet" media="screen"/>
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="screen"/>
     @yield('style')
 </head>
 <body class="grey lighten-3">

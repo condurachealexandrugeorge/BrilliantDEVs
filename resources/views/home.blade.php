@@ -1,10 +1,5 @@
 @extends('layouts.master')
-<header>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--}}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</header>
+
 @section('content')
     <main class="pt-5 mx-lg-5">
         <div class="container-fluid mt-5">
@@ -91,7 +86,7 @@
                                     <i class="fa fa-user-plus pull-right" aria-hidden="true" style="font-size: 24px;"></i>
                                 </a>
                                 <a class="list-group-item list-group-item-action waves-effect" href="{{ url('users') }}">All Users
-                                    <i class="fa fa-users pull-right" aria-hidden="true" style="font-size: 24px;"></i>
+                                    <i class="fa fa-users pull-right" aria-hidden="true" style="font-size: 24px;" ></i>
                                 </a>
                             </div>
                         </div>
