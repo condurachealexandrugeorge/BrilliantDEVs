@@ -29,7 +29,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/signup', [
         'uses' => 'AuthController@getSignUpPage',
         'as' => 'signup',
-        'middleware' => 'guest'
+        'middleware' => 'roles',
+        'roles' => ['Admin']
     ]);
     Route::get('/signin', [
         'uses' => 'AuthController@getSignInPage',
@@ -50,7 +51,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('/signup', [
         'uses' => 'AuthController@postSignUp',
         'as' => 'signup',
-        'middleware' => 'guest',
+        'middleware' => 'roles',
+        'roles' => ['Admin']
     ]);
     Route::post('/admin/assign-roles', [
         'uses' => 'AppController@postAdminAssignRoles',

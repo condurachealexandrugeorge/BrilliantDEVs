@@ -31,7 +31,7 @@ use Illuminate\Support\Facades\Auth;
              $user->password = bcrypt($request['password']);
              $user->save();
              $user->roles()->attach(Role::where('name', 'Client')->first());
-             Auth::login($user);
+//             Auth::login($user);
              return redirect()->route('main');
      }
 
