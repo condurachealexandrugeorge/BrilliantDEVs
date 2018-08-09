@@ -22,6 +22,7 @@
                 </thead>
                 <tbody>
                 @foreach($users as $user)
+                    <tr>
                     <td>{{$user->id}}</td>
                     <td>{{$user->name}}</td>
                     <td>{{$user->email}}</td>
@@ -29,12 +30,10 @@
                         {{$user ->hasRole('Manager') ? 'Manager' : ''}}
                         {{$user ->hasRole('Developer') ? 'Developer' : ''}}
                         {{$user ->hasRole('Client') ? 'Client' : ''}}
-
                     </td>
-                </tr>
-                </tbody>
+                    </tr>
                 @endforeach
-                <tr>
+                </tbody>
             </table>
         </div>
     </main>
