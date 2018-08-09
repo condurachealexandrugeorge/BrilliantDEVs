@@ -27,7 +27,7 @@
                     <div class="card mb-3">
                         <!-- Card header -->
                         <div class="card-header text-center">
-                            Servicii
+                            Services
                         </div>
                         <!--Card content-->
                         <div class="card-body">
@@ -35,7 +35,7 @@
                                 <a class="list-group-item list-group-item-action waves-effect">Hosting
                                     <i class="fa fa-server pull-right" aria-hidden="true" style="font-size: 24px;"></i>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Mentenanta
+                                <a class="list-group-item list-group-item-action waves-effect">Maintenance
                                     <i class="fa fa-wrench pull-right" aria-hidden="true" style="font-size: 24px;"></i>
                                 </a>
 
@@ -47,26 +47,26 @@
                     <div class="card mb-3">
                         <!-- Card header -->
                         <div class="card-header text-center">
-                            Statistici
+                            Statistics
                         </div>
                         <!--Card content-->
                         <div class="card-body">
                             <div class="list-group list-group-flush">
-                                <a class="list-group-item list-group-item-action waves-effect">Facturi scadente
+                                <a class="list-group-item list-group-item-action waves-effect">Unpaid bills
                                     <span class="badge badge-warning badge-pill pull-right">22
                                     </span>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Servicii hosting
+                                <a class="list-group-item list-group-item-action waves-effect">Hosting
                                     <span class="badge badge-primary badge-pill pull-right">5
                                     </span>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Servicii mentenanta
+                                <a class="list-group-item list-group-item-action waves-effect">Maintenance
                                     <span class="badge badge-primary badge-pill pull-right">14</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Useri
+                                <a class="list-group-item list-group-item-action waves-effect">Users
                                     <span class="badge badge-primary badge-pill pull-right">123</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action waves-effect">Istoric facturi
+                                <a class="list-group-item list-group-item-action waves-effect">Billing history
                                     <i class="fa fa-file pull-right" aria-hidden="true" style="font-size: 24px;"></i>
                                 </a>
                             </div>
@@ -84,6 +84,9 @@
                             <div class="list-group list-group-flush">
                                 <a class="list-group-item list-group-item-action waves-effect">Add User
                                     <i class="fa fa-user-plus pull-right" aria-hidden="true" style="font-size: 24px;"></i>
+                                </a>
+                                <a class="list-group-item list-group-item-action waves-effect" href="{{ url('users') }}">Change role
+                                    <i class="fa fa-pencil-square-o pull-right" aria-hidden="true" style="font-size: 28px;" ></i>
                                 </a>
                                 <a class="list-group-item list-group-item-action waves-effect" href="{{ url('users') }}">All Users
                                     <i class="fa fa-users pull-right" aria-hidden="true" style="font-size: 24px;" ></i>
